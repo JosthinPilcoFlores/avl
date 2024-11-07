@@ -10,6 +10,8 @@ struct AVL {
 
 struct AVL* insert(struct AVL* node, int data);
 int height(struct AVL* node);
+int balanceFactor(struct AVL* node);
+int isAVL(struct AVL* node);
 
 #endif
 
