@@ -8,10 +8,11 @@ struct AVL {
   struct AVL* parent;
 };
 
-struct AVL* insert(struct AVL* node, int data);
+struct AVL* insertBST(struct AVL* node, int data);
 int height(struct AVL* node);
 int balanceFactor(struct AVL* node);
 int isAVL(struct AVL* node);
-
+struct AVL* leftRotation(struct AVL* node);
+struct AVL* rightRotation(struct AVL* node);
 #endif
 
